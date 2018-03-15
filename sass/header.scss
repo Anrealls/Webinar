@@ -1,0 +1,147 @@
+.page-header {
+  width: 100%;
+  height: 100vh;
+  min-height: 850px;
+  padding-top: 100px;
+  background: #000 url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.header-info_title {
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  font-weight: 400;
+  b {
+    text-transform: none;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+  span {
+    color: #f0e353;
+  }
+
+}
+
+.header-info {
+  p {
+    margin: 0;
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+  }
+  .header-info_questions {
+    margin-bottom: 120px;
+  }
+  .header-info_date {
+    margin-bottom: 200px;
+    padding-left: 10px;
+    border-left: 8px solid #f0e353;
+    span {
+      font-size: 20px;
+    }
+  }
+}
+
+.header-info_count {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  span {
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 300;
+  }
+  p {
+    margin: 0;
+    font-size: 38px;
+    text-align: center;
+    max-width: 200px;
+    line-height: 38px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 121px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+
+.header-down {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+}
+
+.header-register {
+  margin-bottom: 25px;
+  padding: 20px 95px;
+  background-color: transparent;
+  font-size: 35px;
+  text-transform: uppercase;
+  border: 2px solid #f0e353;
+  color: #f0e353;
+  &:hover {
+    background-color: #f0e353;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+.header-arrow {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  &::before {
+    transform: rotate(-45deg);
+    left: 41px;
+  }
+}
+
+.header-arrow-active {
+  transition: all 0.5s ease;
+  transform: translateY(50px);
+}
+#secondNumb,
+#firstNumb {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
